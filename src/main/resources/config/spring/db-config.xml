@@ -32,7 +32,7 @@
 		<property name="dataSource" ref="dataSource" />
 
 		<!-- <property name="persistenceUnitName" value="defaultPU2"/> -->
-		<property name="packagesToScan" value="org.smart"></property>
+		<property name="packagesToScan" value="com.wincn"></property>
 		<property name="jpaVendorAdapter" ref="hibernateJpaVendorAdapter" />
 		<property name="jpaProperties">
 			<props>
