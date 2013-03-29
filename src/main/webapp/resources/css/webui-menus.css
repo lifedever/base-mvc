@@ -1,0 +1,1179 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@charset "UTF-8";
+/* CSS Document */
+
+/*---color backgrounds ---*/
+
+.menubar-alpha .redbg a:hover,.menubar-alpha .redbg a:active,
+.menubar-alpha .redbg .hot a,.menubar-alpha .redbg .hot a:visited
+{
+	background-color:#a90329;
+}
+
+.menubar-alpha .graybg a:hover,.menubar-alpha .graybg a:active,
+.menubar-alpha .graybg .hot a,.menubar-alpha .graybg .hot a:visited{
+	background-color:#888;
+}
+
+.menubar-alpha .blackbg a:hover,.menubar-alpha .blackbg a:active,
+.menubar-alpha .blackbg .hot a,.menubar-alpha .blackbg .hot a:visited{
+	background-color:#333;
+}
+
+.menubar-alpha .greenbg a:hover,.menubar-alpha .greenbg a:active,
+.menubar-alpha .greenbg .hot a,.menubar-alpha .greenbg .hot a:visited
+{
+	background-color:#006e2e;
+}
+.menubar-alpha .greenbg2 a:hover,.menubar-alpha .greenbg2 a:active,
+.menubar-alpha .greenbg2 .hot a,.menubar-alpha .greenbg2 .hot a:visited{
+	background-color:#8fc400;
+}
+
+.menubar-alpha .bluebg a:hover,.menubar-alpha .bluebg a:active,
+.menubar-alpha .bluebg .hot a,.menubar-alpha .bluebg .hot a:visited{
+	background-color:#276CAF;
+}
+
+.menubar-alpha .skybg a:hover,.menubar-alpha .skybg a:active,
+.menubar-alpha .skybg .hot a,.menubar-alpha .skybg .hot a:visited{
+	background-color:#4abfee;
+}
+
+.menubar-alpha .autumnbg a:hover,.menubar-alpha .autumnbg a:active,
+.menubar-alpha .autumnbg .hot a,.menubar-alpha .autumnbg .hot a:visited{
+	background-color:#e97f3b;
+}
+
+.menubar-alpha .orangebg a:hover,.menubar-alpha .orangebg a:active,
+.menubar-alpha .orangebg .hot a,.menubar-alpha .orangebg .hot a:visited
+{
+	background-color:#ff9943;
+}
+
+.menubar-alpha .earthbg a:hover,.menubar-alpha .earthbg a:active,
+.menubar-alpha .earthbg .hot a,.menubar-alpha .earthbg .hot a:visited
+{
+	background-color:#A87833;
+}
+
+.menubar-alpha .coffeebg a:hover,.menubar-alpha .coffeebg a:active,
+.menubar-alpha .coffeebg .hot a,.menubar-alpha .coffeebg .hot a:visited
+{
+	background-color:#937d6d;
+}
+
+.menubar-alpha .pinkbg a:hover,.menubar-alpha .pinkbg a:active,
+.menubar-alpha .pinkbg .hot a,.menubar-alpha .pinkbg .hot a:visited
+{
+	background-color:#f775b8;
+}
+
+.menubar-alpha .bluegraybg a:hover,.menubar-alpha .bluegraybg a:active,
+.menubar-alpha .bluegraybg .hot a,.menubar-alpha .bluegraybg .hot a:visited
+{
+	background-color:#356aa0;
+}
+
+.menubar-alpha .graybluebg a:hover,.menubar-alpha .graybluebg a:active,
+.menubar-alpha .graybluebg .hot a,.menubar-alpha .graybluebg .hot a:visited{
+	background-color:#4f4e60;
+}
+
+
+
+
+
+/*---gradient backgrounds ---*/
+
+.menubar-alpha .redgbg a,.menubar-alpha .redgbg a:link,.menubar-alpha .redgbg a:visited,
+.menubar-alpha .graygbg a,.menubar-alpha .graygbg a:link,.menubar-alpha .graygbg a:visited,
+.menubar-alpha .greengbg a,.menubar-alpha .greengbg a:link,.menubar-alpha .greengbg a:visited,
+.menubar-alpha .greengbg2 a,.menubar-alpha .greengbg2 a:link,.menubar-alpha .greengbg2 a:visited,
+.menubar-alpha .bluegbg a,.menubar-alpha .bluegbg a:link,.menubar-alpha .bluegbg a:visited,
+.menubar-alpha .skygbg a,.menubar-alpha .skygbg a:link,.menubar-alpha .skygbg a:visited,
+.menubar-alpha .orangegbg a,.menubar-alpha .orangegbg a:link,.menubar-alpha .orangegbg a:visited,
+.menubar-alpha .autumngbg a,.menubar-alpha .autumngbg a:link,.menubar-alpha .autumngbg a:visited,
+.menubar-alpha .earthgbg a,.menubar-alpha .earthgbg a:link,.menubar-alpha .earthgbg a:visited,
+.menubar-alpha .coffeegbg a,.menubar-alpha .coffeegbg a:link,.menubar-alpha .coffeegbg a:visited,
+.menubar-alpha .pinkgbg a,.menubar-alpha .pinkgbg a:link,.menubar-alpha .pinkgbg a:visited,
+.menubar-alpha .bluegraygbg a,.menubar-alpha .bluegraygbg a:link,.menubar-alpha .bluegraygbg a:visited,
+.menubar-alpha .graybluegbg a,.menubar-alpha .graybluegbg a:link,.menubar-alpha .graybluegbg a:visited,
+.menubar-alpha .blackgb a,.menubar-alpha .blackgb a:link,.menubar-alpha .blackgb a:visited
+{
+	color:#fff;
+}
+
+
+
+.menubar-alpha .redgbg a:hover,.menubar-alpha .redgbg a:active{
+	background-color:#a90329;
+}
+
+.menubar-alpha .graygbg a:hover,.menubar-alpha .graygbg a:active{
+	background-color:#888;
+}
+
+.menubar-alpha .greengbg a:hover,.menubar-alpha .greengbg a:active{
+	background-color:#006e2e;
+}
+.menubar-alpha .greengbg2 a:hover,.menubar-alpha .greengbg2 a:active{
+	background-color:#73880a;
+}
+
+.menubar-alpha .bluegbg a:hover,.menubar-alpha .bluegbg a:active{
+	background-color:#105497;
+}
+
+.menubar-alpha .skygbg a:hover,.menubar-alpha .skygbg a:active{
+	background-color:#2cafe3;
+}
+
+.menubar-alpha .autumngbg a:hover,.menubar-alpha .autumngbg a:active{
+	background-color:#a3460b;
+}
+
+.menubar-alpha .orangegbg a:hover,.menubar-alpha .orangegbg a:active{
+	background-color:#ff7400;
+}
+
+.menubar-alpha .earthgbg a:hover,.menubar-alpha .earthgbg a:active{
+	background-color:#A87833;
+}
+
+.menubar-alpha .coffeegbg a:hover,.menubar-alpha .coffeegbg a:active{
+	background-color:#55483f;
+}
+
+.menubar-alpha .pinkgbg a:hover,.menubar-alpha .pinkgbg a:active{
+	background-color:#c10264;
+}
+
+.menubar-alpha .bluegraygbg a:hover,.menubar-alpha .bluegraygbg a:active{
+	background-color:#356aa0;
+}
+
+.menubar-alpha .graybluegbg a:hover,.menubar-alpha .graybluegbg a:active{
+	background-color:#4f4e60;
+}
+
+.menubar-alpha .blackbg a:hover,.menubar-alpha .blackbg a:active{
+	background-color:#555;
+}
+
+
+/*----- current ------*/
+
+.menu-alpha .current a,.menu-alpha .current a:link,.menu-alpha .current a:visited{
+	color:#333;
+}
+
+.menu-alpha .current a:hover,.menu-alpha .current a:focus,.menu-alpha .current a:active{
+	color:#fff;
+}
+
+
+
+/*----- submenus ----------*/
+
+.menu-alpha .submenu{
+	z-index:9999;
+	
+}
+
+
+
+
+.menu-alpha .sub{
+	position:absolute;
+	top:35px;
+	left:0;
+	float:left;
+	background:#fff;
+	padding:10px;
+	
+	/*--Bottom right rounded corner--*/
+	-moz-border-radius-bottomright: 5px;
+	-khtml-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	/*--Bottom left rounded corner--*/
+	-moz-border-radius-bottomleft: 5px;
+	-khtml-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	display:none;
+	*border:1px solid #eee;
+	-webkit-box-shadow: #999 0px 1px 1px;
+	-moz-box-shadow: #999 0px 1px 1px;
+	box-shadow: #999 0px 1px 1px;
+	
+	
+	/*width:500px;   --  use javascript to set width*/
+}
+
+
+.menu-alpha  .sub ul{
+	width:100px;
+	float:left;
+	text-align:left;
+}
+
+.menu-alpha .sub li{
+	float:none;
+}
+
+.menu-alpha li .row {
+	clear: both; 
+	float: left; 
+	width: 100%; 
+	margin-bottom: 10px;
+}
+
+.menu-alpha .sub h2{
+	font-weight:bold;
+	text-align:left;
+}
+
+.menu-alpha .sub a,.menu-alpha .sub a:visited{
+	float: none;
+	text-indent: 0; 
+	height: 18px; 
+	line-height:18px;
+	padding: 2px 5px 2px 5px;
+	background:#fff;
+	display: block;
+	text-decoration: none;
+	color: #333;
+	text-align:left;
+}
+
+.menu-alpha .sub a:hover,.menu-alpha .sub a:active{
+	color:#d54e21;
+	text-decoration:underline;
+}
+
+
+
+.menubar-alpha .submenu a,.menubar-alpha .submenu a:link,.menubar-alpha .submenu a:visited {
+  background-image:url(../images/webui/icons/down-arrow.gif);
+  background-position:right 8px;
+  background-repeat:no-repeat;
+  padding-right:20px;
+}
+
+
+.menu-alpha .hot .sub a,.menu-alpha .hot .sub a:visited{
+	background:none;
+}
+
+/*---sub menu colors */
+
+ 
+  .bluebg  .sub a,  .bluebg .sub a:link, .bluebg  .sub a:visited{
+	background:none;
+	color:#105497;
+}
+
+
+
+
+
+
+.menubar-alpha .sub a:hover,.menubar-alpha .sub a:active{
+	color:#d54e21;
+	text-decoration:underline;
+}
+
+
+
+/*-----------------tabmenu color ------------------------*/
+
+ .tab-green,.tab-green  .tabmenu li{
+	border-color:#299a0b; 
+}
+
+.tab-green .tabmenu .current a,.tab-green .tabmenu .current a:visited{
+	background:#299a0b;
+	color:#fff;
+}
+
+.tab-green .tabmenu li a:hover,.tab-green .tabmenu li a:active{
+   color:#299a0b;
+}
+
+
+
+ .tab-green2, .tab-green2  .tabmenu li{
+	border-color:#80AC3A; 
+}
+
+.tab-green2 .tabmenu .current a,.tab-green2 .tabmenu .current a:visited{
+	background:#80AC3A;
+	color:#fff;
+}
+
+.tab-green2 .tabmenu li a:hover,.tab-green2 .tabmenu li a:active{
+   color:#80AC3A;
+}
+
+
+ .tab-red, .tab-red  .tabmenu li{
+	border-color:#cc0000; 
+}
+
+.tab-red .tabmenu .current a,.tab-red .tabmenu .current a:visited{
+	background:#cc0000;
+	color:#fff;
+}
+
+.tab-red .tabmenu li a:hover,.tab-red .tabmenu li a:active{
+   color:#cc0000;
+}
+
+ .tab-sky, .tab-sky  .tabmenu li{
+	border-color:#2cafe3; 
+}
+
+
+.tab-sky .tabmenu .current a,.tab-sky .tabmenu .current a:visited{
+	background:#2cafe3;
+	color:#fff;
+}
+
+.tab-sky .tabmenu li a:hover,.tab-sky .tabmenu li a:active{
+   color:#2cafe3;
+}
+
+ .tab-autumn,  .tab-autumn  .tabmenu li{
+	border-color:#c8640e; 
+}
+
+
+.tab-autumn .tabmenu .current a,.tab-autumn .tabmenu .current a:visited{
+	background:#c8640e;
+	color:#fff;
+}
+
+.tab-autumn .tabmenu li a:hover,.tab-autumn .tabmenu li a:active{
+   color:#c8640e;
+}
+
+
+ .tab-autumn,  .tab-autumn  .tabmenu li{
+	border-color:#c8640e; 
+}
+
+
+.tab-autumn .tabmenu .current a,.tab-autumn .tabmenu .current a:visited{
+	background:#c8640e;
+	color:#fff;
+}
+
+.tab-autumn .tabmenu li a:hover,.tab-autumn .tabmenu li a:active{
+   color:#c8640e;
+}
+
+
+ .tab-earth,  .tab-earth  .tabmenu li{
+	border-color:#bf8b3f; 
+}
+
+
+.tab-earth .tabmenu .current a,.tab-earth .tabmenu .current a:visited{
+	background:#bf8b3f;
+	color:#fff;
+}
+
+.tab-earth .tabmenu li a:hover,.tab-earth .tabmenu li a:active{
+   color:#bf8b3f;
+}
+
+
+ .tab-coffee,  .tab-coffee  .tabmenu li{
+	border-color:#736357; 
+}
+
+
+.tab-coffee .tabmenu .current a,.tab-coffee .tabmenu .current a:visited{
+	background:#736357;
+	color:#fff;
+}
+
+.tab-coffee .tabmenu li a:hover,.tab-coffee .tabmenu li a:active{
+   color:#736357;
+}
+
+ .tab-pink,  .tab-pink  .tabmenu li{
+	border-color:#ff5db1; 
+}
+
+
+.tab-pink .tabmenu .current a,.tab-pink .tabmenu .current a:visited{
+	background:#ff5db1;
+	color:#fff;
+}
+
+.tab-pink .tabmenu li a:hover,.tab-pink .tabmenu li a:active{
+   color:#ff5db1;
+}
+
+
+ .tab-blue,  .tab-blue  .tabmenu li{
+	border-color:#105497; 
+}
+
+
+.tab-blue .tabmenu .current a,.tab-blue .tabmenu .current a:visited{
+	background:#105497;
+	color:#fff;
+}
+
+.tab-blue .tabmenu li a:hover,.tab-blue .tabmenu li a:active{
+   color:#105497;
+}
+
+
+
+ .tab-bluegray,  .tab-bluegray  .tabmenu li{
+	border-color:#6393C1; 
+}
+
+
+.tab-bluegray .tabmenu .current a,.tab-bluegray .tabmenu .current a:visited{
+	background:#6393C1;
+	color:#fff;
+}
+
+.tab-bluegray .tabmenu li a:hover,.tab-bluegray .tabmenu li a:active{
+   color:#6393C1;
+}
+
+ .tab-grayblue,  .tab-grayblue  .tabmenu li{
+	border-color:#77788d; 
+}
+
+
+.tab-grayblue .tabmenu .current a,.tab-grayblue .tabmenu .current a:visited{
+	background:#77788d;
+	color:#fff;
+}
+
+.tab-grayblue .tabmenu li a:hover,.tab-grayblue .tabmenu li a:active{
+   color:#77788d;
+}
+
+ .tab-gray,  .tab-gray  .tabmenu li{
+	border-color:#666; 
+}
+
+
+.tab-gray .tabmenu .current a,.tab-gray .tabmenu .current a:visited{
+	background:#666;
+	color:#fff;
+}
+
+.tab-gray .tabmenu li a:hover,.tab-gray .tabmenu li a:active{
+   color:#666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************   sf-menu ESSENTIAL STYLES ***/
+.sf-menu, .sf-menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+}
+
+
+
+.sf-menu {
+	line-height:	1.0;
+}
+.sf-menu ul {
+	position:		absolute;
+	top:			-999em;
+	width:			10em; /* left offset of submenus need to match (see below) */
+}
+.sf-menu ul li {
+	width:			100%;
+}
+.sf-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li {
+	float:			left;
+	position:		relative;
+}
+.sf-menu a {
+	display:		block;
+	position:		relative;
+}
+
+.sf-menu a:hover,.sf-menu a:active{
+	text-decoration:none;
+}
+
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left:			0;
+	top:			2.5em; /* match top ul list item height */
+	z-index:		99;
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+
+.sf-submenu{
+	z-index:999;
+}
+
+/*** DEMO SKIN ***/
+.sf-menu {
+	float:			left;
+	margin-bottom:	1em;
+}
+.sf-menu a {
+	border-left:	1px solid #fff;
+	border-top:		1px solid #CFDEFF;
+	padding: 		.75em 1em;
+	text-decoration:none;
+}
+.sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
+	color:			#13a;
+}
+.sf-menu li {
+	background:		#BDD2FF;
+}
+.sf-menu li li {
+	background:		#AABDE6;
+}
+.sf-menu li li li {
+	background:		#9AAEDB;
+}
+.sf-menu li:hover, .sf-menu li.sfHover,
+.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+	background:		#CFDEFF;
+	outline:		0;
+}
+
+/*** arrows **/
+.sf-menu a.sf-with-ul {
+	padding-right: 	2.25em;
+	min-width:		1px; /* trigger IE7 hasLayout so spans position accurately */
+}
+.sf-sub-indicator {
+	position:		absolute;
+	display:		block;
+	right:			.75em;
+	top:			1.05em; /* IE6 only */
+	width:			10px;
+	height:			10px;
+	text-indent: 	-999em;
+	overflow:		hidden;
+	background:		url(../images/webui/arrows.png) no-repeat -10px -104px; /* 8-bit indexed alpha png. IE6 gets solid image only */
+}
+a > .sf-sub-indicator {  /* give all except IE6 the correct values */
+	top:			.8em;
+	background-position: 0 -100px; /* use translucent arrow for modern browsers*/
+}
+/* apply hovers to modern browsers */
+a:focus > .sf-sub-indicator,
+a:hover > .sf-sub-indicator,
+a:active > .sf-sub-indicator,
+li:hover > a > .sf-sub-indicator,
+li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px -100px; /* arrow hovers for modern browsers*/
+}
+
+/* point right for anchors in subs */
+.sf-menu ul .sf-sub-indicator { background-position:  -10px 0; }
+.sf-menu ul a > .sf-sub-indicator { background-position:  0 0; }
+/* apply hovers to modern browsers */
+.sf-menu ul a:focus > .sf-sub-indicator,
+.sf-menu ul a:hover > .sf-sub-indicator,
+.sf-menu ul a:active > .sf-sub-indicator,
+.sf-menu ul li:hover > a > .sf-sub-indicator,
+.sf-menu ul li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px 0; /* arrow hovers for modern browsers*/
+}
+
+/*** shadows for all but IE6 ***/
+.sf-shadow ul {
+	background:	url(../images/webui/shadow.png) no-repeat bottom right;
+	padding: 0 8px 9px 0;
+	-moz-border-radius-bottomleft: 17px;
+	-moz-border-radius-topright: 17px;
+	-webkit-border-top-right-radius: 17px;
+	-webkit-border-bottom-left-radius: 17px;
+}
+.sf-shadow ul.sf-shadow-off {
+	background: transparent;
+}
+
+/*------------vertical menu ---------------*/
+
+/*** adding sf-vertical in addition to sf-menu creates a vertical menu ***/
+.sf-vertical, .sf-vertical li {
+	width:	10em;
+}
+/* this lacks ul at the start of the selector, so the styles from the main CSS file override it where needed */
+.sf-vertical li:hover ul,
+.sf-vertical li.sfHover ul {
+	left:	10em; /* match ul width */
+	top:	0;
+}
+
+/*** alter arrow directions ***/
+.sf-vertical .sf-sub-indicator { background-position: -10px 0; } /* IE6 gets solid image only */
+.sf-vertical a > .sf-sub-indicator { background-position: 0 0; } /* use translucent arrow for modern browsers*/
+
+/* hover arrow direction for modern browsers*/
+.sf-vertical a:focus > .sf-sub-indicator,
+.sf-vertical a:hover > .sf-sub-indicator,
+.sf-vertical a:active > .sf-sub-indicator,
+.sf-vertical li:hover > a > .sf-sub-indicator,
+.sf-vertical li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px 0; /* arrow hovers for modern browsers*/
+}
+
+
+/*--------------------submenu with navbar ---------------------*/
+
+/*** adding the class sf-navbar in addition to sf-menu creates an all-horizontal nav-bar menu ***/
+.sf-navbar {
+	background:		#BDD2FF;
+	height:			2.5em;
+	padding-bottom:	2.5em;
+	position:		relative;
+}
+.sf-navbar li {
+	background:		#AABDE6;
+	position:		static;
+}
+.sf-navbar a {
+	border-top:		none;
+}
+.sf-navbar li ul {
+	width:			44em; /*IE6 soils itself without this*/
+}
+.sf-navbar li li {
+	background:		#BDD2FF;
+	position:		relative;
+}
+.sf-navbar li li ul {
+	width:			13em;
+}
+.sf-navbar li li li {
+	width:			100%;
+}
+.sf-navbar ul li {
+	width:			auto;
+	float:			left;
+}
+.sf-navbar a, .sf-navbar a:visited {
+	border:			none;
+}
+.sf-navbar li.current {
+	background:		#BDD2FF;
+}
+.sf-navbar li:hover,
+.sf-navbar li.sfHover,
+.sf-navbar li li.current,
+.sf-navbar a:focus, .sf-navbar a:hover, .sf-navbar a:active {
+	background:		#BDD2FF;
+}
+.sf-navbar ul li:hover,
+.sf-navbar ul li.sfHover,
+ul.sf-navbar ul li:hover li,
+ul.sf-navbar ul li.sfHover li,
+.sf-navbar ul a:focus, .sf-navbar ul a:hover, .sf-navbar ul a:active {
+	background:		#D1DFFF;
+}
+ul.sf-navbar li li li:hover,
+ul.sf-navbar li li li.sfHover,
+.sf-navbar li li.current li.current,
+.sf-navbar ul li li a:focus, .sf-navbar ul li li a:hover, .sf-navbar ul li li a:active {
+	background:		#E6EEFF;
+}
+ul.sf-navbar .current ul,
+ul.sf-navbar ul li:hover ul,
+ul.sf-navbar ul li.sfHover ul {
+	left:			0;
+	top:			2.5em; /* match top ul list item height */
+}
+ul.sf-navbar .current ul ul {
+	top: 			-999em;
+}
+
+.sf-navbar li li.current > a {
+	font-weight:	bold;
+}
+
+/*** point all arrows down ***/
+/* point right for anchors in subs */
+.sf-navbar ul .sf-sub-indicator { background-position: -10px -100px; }
+.sf-navbar ul a > .sf-sub-indicator { background-position: 0 -100px; }
+/* apply hovers to modern browsers */
+.sf-navbar ul a:focus > .sf-sub-indicator,
+.sf-navbar ul a:hover > .sf-sub-indicator,
+.sf-navbar ul a:active > .sf-sub-indicator,
+.sf-navbar ul li:hover > a > .sf-sub-indicator,
+.sf-navbar ul li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px -100px; /* arrow hovers for modern browsers*/
+}
+
+/*** remove shadow on first submenu ***/
+.sf-navbar > li > ul {
+	background: transparent;
+	padding: 0;
+	-moz-border-radius-bottomleft: 0;
+	-moz-border-radius-topright: 0;
+	-webkit-border-top-right-radius: 0;
+	-webkit-border-bottom-left-radius: 0;
+}
+
+
+/*--------------------custom skins for  superfish menu   ------------*/
+
+
+.sf-menu a {
+	border-left:	none;
+	border-top:		none;
+	padding: 		.75em 1.55em;
+	text-decoration:none;
+	
+}
+
+
+.menubar-alpha .sf-menu a, .menubar-alpha .sf-menu a:visited,
+.vmenubar-alpha .sf-menu a, .vmenubar-alpha .sf-menu a:visited  { 
+	color:			#fff;
+}
+
+
+.menubar-alpha .sf-menu li li  a:link,.menubar-alpha .sf-menu li li  a:visited,
+.vmenubar-alpha .sf-menu li li  a:link,.vmenubar-alpha .sf-menu li li  a:visited{
+	color:#333;
+}
+
+.menubar-alpha .sf-menu li li  a:focus,.menubar-alpha .sf-menu li li  a:hover,.menubar-alpha .sf-menu li li  a:active,
+.vmenubar-alpha .sf-menu li li  a:focus,.vmenubar-alpha .sf-menu li li  a:hover,.vmenubar-alpha .sf-menu li li  a:active{
+	color:#fff;
+}
+
+
+.menubar-alpha .sf-menu li li.sfHover a, .menubar-alpha .sf-menu li li.sfHover a:visited,
+.vmenubar-alpha .sf-menu li li.sfHover a, .vmenubar-alpha .sf-menu li li.sfHover a:visited{
+	color:#fff;
+}
+
+.menubar-alpha .sf-menu li li.sfHover li a,.menubar-alpha .sf-menu li li.sfHover li a:visited,
+.vmenubar-alpha .sf-menu li li.sfHover li a,.vmenubar-alpha .sf-menu li li.sfHover li a:visited{
+	color:#333;
+}
+
+.menubar-alpha .sf-menu li li.sfHover li a:active,.menubar-alpha .sf-menu li li.sfHover li a:hover,
+.vmenubar-alpha .sf-menu li li.sfHover li a:active,.vmenubar-alpha .sf-menu li li.sfHover li a:hover{
+	color:#fff;
+}
+
+
+.menubar-alpha .sf-menu li li,
+.vmenubar-alpha .sf-menu li li{
+	background:		#eee;
+}
+
+
+
+
+.sf-silver .sf-sub-indicator,.sf-silvergbg .sf-sub-indicator {
+	background:		url(../images/webui/arrows-dark.png) no-repeat -10px -100px; /* 8-bit indexed alpha png. IE6 gets solid image only */
+	_background:		url(../images/webui/arrows-dark.png) no-repeat -10px -104px; /* 8-bit indexed alpha png. IE6 gets solid image only */
+}
+
+.sf-silver .sf-vertical .sf-sub-indicator{
+	background:		url(../images/webui/arrows-dark.png) no-repeat -10px 0; /* 8-bit indexed alpha png. IE6 gets solid image only */
+	_background:		url(../images/webui/arrows-dark.png) no-repeat -10px -1px; /* 8-bit indexed alpha png. IE6 gets solid image only */
+}
+
+
+
+
+
+.sf-blue{
+	background:#105497;
+}
+
+
+
+.sf-blue .sf-menu li { 
+	background:		#105497;
+}
+
+
+.sf-blue .sf-menu li:hover,  .sf-blue .sf-menu li.sfHover,
+.sf-blue .sf-menu a:focus,  .sf-blue .sf-menu a:hover, .sf-blue .sf-menu a:active {
+	background:#276CAF;
+	color:#fff;
+}
+
+
+.sf-sky{
+	background:#2cafe3;
+}
+
+
+
+.sf-sky .sf-menu li { 
+	background:		#2cafe3;
+}
+
+
+.sf-sky .sf-menu li:hover,  .sf-sky .sf-menu li.sfHover,
+.sf-sky .sf-menu a:focus,  .sf-sky .sf-menu a:hover, .sf-sky .sf-menu a:active {
+	background:#4abfee;
+	color:#fff;
+}
+
+
+
+.sf-red{
+	background:#c00;
+}
+
+
+
+.sf-red .sf-menu li { 
+	background:		#c00;;
+}
+
+
+.sf-red .sf-menu li:hover,  .sf-red .sf-menu li.sfHover,
+.sf-red .sf-menu a:focus,  .sf-red .sf-menu a:hover, .sf-red .sf-menu a:active {
+	background:#d33b3b;
+	color:#fff;
+}
+
+
+
+
+.sf-gray{
+	background:#666;
+}
+
+
+
+.sf-gray .sf-menu li {
+	background:		#666;
+}
+
+
+.sf-gray .sf-menu li:hover,  .sf-gray .sf-menu li.sfHover,
+.sf-gray .sf-menu a:focus,  .sf-gray .sf-menu a:hover, .sf-gray .sf-menu a:active {
+	background:#999;
+	color:#fff;
+}
+
+.sf-black{
+	background:#333;
+}
+
+
+
+.sf-black .sf-menu li {
+	background:		#333;
+}
+
+
+.sf-black .sf-menu li:hover,  .sf-black .sf-menu li.sfHover,
+.sf-black .sf-menu a:focus,  .sf-black .sf-menu a:hover, .sf-black .sf-menu a:active {
+	background:#555;
+	color:#fff;
+}
+
+
+
+
+.sf-silver{
+	background:#eee;
+}
+
+
+.sf-silver .sf-menu a, .sf-silver .sf-menu a:visited  { 
+	color:			#333;
+}
+
+.sf-silver .sf-menu li {
+	background:		#eee;
+}
+
+
+
+.sf-silver .sf-menu a, .sf-silver .sf-menu a:visited  { 
+	color:			#333;
+}
+
+
+
+.sf-silver .sf-menu li li  a:focus,.sf-silver .sf-menu li li  a:hover,.sf-silver .sf-menu li li  a:active{
+	color:#c00;
+}
+
+
+.sf-silver .sf-menu li li.sfHover a:visited{
+	color:#c00;
+}
+
+
+.sf-silver .sf-menu li li.sfHover li a:active,.sf-silver .sf-menu li li.sfHover li a:hover{
+	color:#c00;
+}
+
+
+.sf-silver .sf-menu li:hover,  .sf-silver .sf-menu li.sfHover,
+.sf-silver .sf-menu a:focus,  .sf-silver .sf-menu a:hover, .sf-silver .sf-menu a:active {
+	background:#ddd;
+	color:#c00;
+}
+
+
+
+.sf-green{
+	background:#299a0b;
+}
+
+
+.sf-green .sf-menu a, .sf-green .sf-menu a:visited  { 
+	color:			#fff;
+}
+
+.sf-green .sf-menu li {
+	background:		#299a0b;
+}
+
+
+
+
+.sf-green .sf-menu li:hover,  .sf-green .sf-menu li.sfHover,
+.sf-green .sf-menu a:focus,  .sf-green .sf-menu a:hover, .sf-green .sf-menu a:active {
+	background:#75b731;
+	color:#fff;
+}
+
+
+
+
+
+.sf-green2{
+	background:#80AC3A;
+}
+
+
+.sf-green2 .sf-menu li {
+	background:		#80AC3A;
+}
+
+.sf-green2 .sf-menu li:hover,  .sf-green2 .sf-menu li.sfHover,
+.sf-green2 .sf-menu a:focus,  .sf-green2 .sf-menu a:hover, .sf-green2 .sf-menu a:active {
+	background:#8fc400;
+	color:#fff;
+}
+
+
+.sf-orange{
+	background:#ff7b0d;
+}
+
+
+.sf-orange .sf-menu li {
+	background:		#ff7b0d;
+}
+
+.sf-orange .sf-menu li:hover,  .sf-orange .sf-menu li.sfHover,
+.sf-orange .sf-menu a:focus,  .sf-orange .sf-menu a:hover, .sf-orange .sf-menu a:active {
+	background:#ffaf4b;
+	color:#fff;
+}
+
+.sf-autumn{
+	background:#c8640e;
+}
+
+
+.sf-autumn .sf-menu li {
+	background:		#c8640e;
+}
+
+.sf-autumn .sf-menu li:hover,  .sf-autumn .sf-menu li.sfHover,
+.sf-autumn .sf-menu a:focus,  .sf-autumn .sf-menu a:hover, .sf-autumn .sf-menu a:active {
+	background:#F4AD45;
+	color:#fff;
+}
+
+
+.sf-earth{
+	background:#bf8b3f;
+}
+
+
+.sf-earth .sf-menu li {
+	background:		#bf8b3f;
+}
+
+.sf-earth .sf-menu li:hover,  .sf-earth .sf-menu li.sfHover,
+.sf-earth .sf-menu a:focus,  .sf-earth .sf-menu a:hover, .sf-earth .sf-menu a:active {
+	background:#d19d50;
+	color:#fff;
+}
+
+
+.sf-coffee{
+	background:#67594e;
+}
+
+
+.sf-coffee .sf-menu li {
+	background:		#67594e;
+}
+
+.sf-coffee .sf-menu li:hover,  .sf-coffee .sf-menu li.sfHover,
+.sf-coffee .sf-menu a:focus,  .sf-coffee .sf-menu a:hover, .sf-coffee .sf-menu a:active {
+	background:#7f6d5f;
+	color:#fff;
+}
+
+
+
+.sf-pink{
+	background:#ff5db1;
+}
+
+
+.sf-pink .sf-menu li {
+	background:		#ff5db1;
+}
+
+.sf-pink .sf-menu li:hover,  .sf-pink .sf-menu li.sfHover,
+.sf-pink .sf-menu a:focus,  .sf-pink .sf-menu a:hover, .sf-pink .sf-menu a:active {
+	background:#ff7cd8;
+	color:#fff;
+}
+
+
+.sf-bluegray{
+	background:#6393C1;
+}
+
+
+.sf-bluegray .sf-menu li {
+	background:		#6393C1;
+}
+
+.sf-bluegray .sf-menu li:hover,  .sf-bluegray .sf-menu li.sfHover,
+.sf-bluegray .sf-menu a:focus,  .sf-bluegray .sf-menu a:hover, .sf-bluegray .sf-menu a:active {
+	background:#85b2d3;
+	color:#fff;
+}
+
+
+.sf-grayblue{
+	background:#77788d;
+}
+
+
+.sf-grayblue .sf-menu li {
+	background:		#77788d;
+}
+
+.sf-grayblue .sf-menu li:hover,  .sf-grayblue .sf-menu li.sfHover,
+.sf-grayblue .sf-menu a:focus,  .sf-grayblue .sf-menu a:hover, .sf-grayblue .sf-menu a:active {
+	background:#8788a0;
+	color:#fff;
+}
+
+
+
+ .sf-silvergbg,.sf-silvergbg .sf-menu li {
+	background: #eee; /* Old browsers */
+	background: -moz-linear-gradient(top, #fafafa 0%, #e2e2e2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fafafa), color-stop(100%,#e2e2e2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #fafafa 0%,#e2e2e2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #fafafa 0%,#e2e2e2 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #fafafa 0%,#e2e2e2 100%); /* IE10+ */
+    /*	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#e2e2e2',GradientType=0 ); /* IE6-9  此滤镜会使 IE中的 sf-menu 菜单事件失效 */
+	background: linear-gradient(top, #fafafa 0%,#e2e2e2 100%); /* W3C */
+}
+
+ .sf-silvergbg {
+	border:1px solid  #eee; 
+}
+
+
+
+
+
+.sf-silvergbg .sf-menu a, .sf-silvergbg .sf-menu a:visited  { 
+	color:	#333;
+}
+
+
+
+.sf-silvergbg .sf-menu li li  a:focus,.sf-silvergbg .sf-menu li li  a:hover,.sf-silvergbg .sf-menu li li  a:active{
+	color:#c00;
+}
+
+
+.sf-silvergbg .sf-menu li li.sfHover a:visited{
+	color:#c00;
+}
+
+
+.sf-silvergbg .sf-menu li li.sfHover li a:active,.sf-silvergbg .sf-menu li li.sfHover li a:hover{
+	color:#c00;
+}
+
+.sf-silvergbg .sf-menu li:hover,  .sf-silvergbg .sf-menu li.sfHover,
+.sf-silvergbg .sf-menu a:focus,  .sf-silvergbg .sf-menu a:hover, .sf-silvergbg .sf-menu a:active {
+	background:#ddd;
+	color:#c00;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+/*
+ * $Id: om-combo.css,v 1.10 2012/02/08 06:00:53 licongping Exp $
+ * operamasks-ui combo @VERSION
+ *
+ * Copyright 2011, AUTHORS.txt (http://ui.operamasks.org/about)
+ * Dual licensed under the MIT or LGPL Version 2 licenses.
+ * http://ui.operamasks.org/license
+ *
+ * http://ui.operamasks.org/docs/
+ */
+.om-combo {white-space: nowrap;display: inline-block;height: 26px;}
+.om-combo input {margin:0px; border: 0px solid;height: 25px;*height : 23px;line-height: 25px;padding-top: 1px;*vertical-align: top;}
+.om-combo .om-combo-trigger {cursor: pointer;display: inline-block;height: 30px;vertical-align: top;width: 19px;}
+.om-combo-list-row {height: 30px; line-height: 30px; padding: 0 5px; margin : 1px; overflow-x: hidden;}
+
+.om-combo{*background: none !important;}
+.om-combo-trigger{background: url("../img/combo/combo-trigger.png") no-repeat scroll 0px 50% transparent;}
+.om-combo-selected, .om-droplist .om-state-hover.om-combo-selected {color:#000; background:none repeat scroll 0 0 #d9edf7}
+ 
+
+.om-combo input.span3, .om-combo input.input-large{
+	width:190px;
+}

@@ -1,0 +1,447 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*------------ standard page --------------*/
+.toolbar .breadcrumb{
+	margin:0;
+	float:left;
+}
+
+.toolbar .icon-home{
+	opacity:.5;
+}
+
+.toolbar{
+	border-top:1px solid #fff;
+}
+
+.toolbar-path{
+	background:#fff url(../img/webui/bg/silvergbg-anti.png) repeat-x;
+	border:1px solid #DDD;
+}
+
+.row-fluid .toolbar-primary{
+	border-bottom:1px solid #ddd;
+}
+
+.row .toolbar-primary{
+	border-bottom:1px solid #ddd;
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+}
+
+.container-split .row .toolbar-primary{
+	border-left:none;
+	border-right:none;
+}
+
+
+
+table img.attachment{
+	max-width:42px;
+	max-height:35px;
+	border:1px solid #ccc;
+	padding:3px;
+}
+
+.list-thumb .attachment{
+	border:1px solid #eee;
+	padding:5px;
+	background:#fff;
+}
+
+
+.list-header{
+	height:35px;
+	border-bottom:1px solid #eee;
+}
+
+.list-header .checkbox{
+	margin:10px 10px 0 10px;
+	padding:0;
+}
+
+
+/* ----------------- thumbs -------------*/
+table .thumb{
+	position:relative;
+}
+
+
+
+/*-------------notify -------------*/
+
+.notifications {
+	z-index: 9999;
+}
+
+
+/* Positioning */
+
+.notifications.top-right {
+  right: 10px;
+  top: 40px;
+}
+
+.notifications.top-left {
+  left: 10px;
+  top: 40px;
+}
+
+.notifications.bottom-left {
+  left: 10px;
+  bottom: 40px;
+}
+
+.notifications.bottom-right {
+  right: 10px;
+  bottom: 40px;
+}
+
+/* Notification Element */
+.notifications > div {
+  position: relative;
+  z-index: 9999;
+  margin: 5px 0px;
+}
+
+
+/* forms */
+form{
+	margin-bottom:0;
+}
+
+form .form-actions{
+	margin-bottom:0;
+}
+
+/*  statistic */
+.stat-summary-box {
+	border:1px solid #ddd;
+	 -webkit-border-radius: 4px;
+	 -moz-border-radius: 4px;
+	 -o-border-radius: 4px; 
+	 -khtml-border-radius: 4px; 
+	 border-radius: 4px;
+	 background:#fff;
+	 background-position:0 bottom;
+	 padding:5px;
+	 	border-left:0;
+	border-right:0;
+	border-bottom:0;
+/* 	border-top:1px solid #F2F2F2; */
+	border-width:1px\9;
+	border-left:1px solid #ddd\9;
+	border-right:1px solid #ddd\9;
+	border-bottom:1px solid #bbb\9;
+	-webkit-box-shadow: #999 0px 1px 1px 0;
+	-moz-box-shadow: #999 0px 1px 1px 0;
+	box-shadow: #999 0px 1px 1px 0;
+}
+
+
+
+.stat-summary-box p{
+	margin-bottom:0;	
+}
+
+.stat-summary-box h2,.stat-summary-box h3{
+	margin-bottom:0;
+	font-weight:normal;
+}
+
+.stat-summary-box img{
+	height:48px;
+	width:48px;
+}
+
+/*-----------view page ------------*/
+
+.view-main{
+	padding:0;
+}
+
+.view-main .media-list .media{
+	margin-top:3px;
+}
+
+.view-main .media-list .media-wrapper{
+	width:50px;
+}
+
+.view-main .media-list img.media-object{
+	width:48px;
+	height:48px;
+}
+
+.view-document{
+	 background: url(../img/webui/bg/macbg-xdarker.png) repeat;
+}
+
+.view-document .row .main-content{
+	background:#fff;
+}
+
+
+.view-photo .nav-tabs > .active > a,
+.view-photo .nav-tabs > .active > a:hover{
+	border:none;
+}
+
+.view-photo{
+	color:#fff;
+	background: #222;
+}
+
+.view-photo .row .main-content{
+	background:url(../img/webui/bg/bg-noise-xdarker.png) repeat;
+	border:none;
+}
+
+.view-photo .toolbar-primary{
+	background:#aaa;
+	border:none;
+	
+}
+.view-photo .toolbar-primary p{
+	text-shadow:none;
+}
+
+.view-photo ul.media-list{
+	color:#fff;
+}
+
+.view-photo ul.media-list li.active{
+	background:#444;
+}
+
+.view-photo .container-split .row .main-content{
+	border:none;
+}
+
+.view-photo .panel-side{
+	background:#333;
+	border:1px solid #444;
+}
+
+.view-photo .panel header{
+	background:#444;
+	border-bottom:1px solid #222;
+	filter:none;
+}
+
+.view-photo .panel .pcontent{
+	border-top:1px solid #444;
+}
+
+.view-photo .nav-tabs > .active > a,
+.view-photo .nav-tabs > .active > a:hover{
+	background:#333;
+	color:#fff;
+	border:none;
+}
+
+.view-photo .table-property td{
+	color:#fff;
+}
+
+.view-photo .page-nav{
+	text-align:center;
+	height:120px;
+	line-height:120px;
+}
+
+.view-photo #photoContainer{
+	position:relative;
+}
+
+.view-photo #photo{
+	position:absolute;
+}
+
+.view-photo #photoInfo{
+	text-align:center;
+	height:25px;
+	overflow:hidden;
+}
+
+
+.view-photo .photo-prev,
+.view-photo .photo-next{
+	position: absolute;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	background:url(../img/webui/alpha.png) repeat;
+	cursor:pointer;
+	z-index:100;
+}
+
+.view-photo .photo-prev{
+	left:0;
+}
+
+.view-photo .photo-next{
+	right: 0;
+}
+
+.view-photo .btn-photo {
+	display: block;
+	width: 100%;
+	height: 100%;
+	outline: none;
+}
+
+
+#photoPrev span, #photoNext span {
+	display: block;
+	width: 87px;
+	height: 87px;
+	position: absolute;
+	top: 50%;
+	margin-top: -43px;
+	cursor: pointer;
+}
+
+#photoPrev span{
+	left: 26px;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.3s ease-out;
+	-moz-transition: opacity 0.3s ease-out;
+	-o-transition: opacity 0.3s ease-out;
+	transition: opacity 0.3s ease-out;
+	background: url(../img/webui/ico/box-prev.png) no-repeat;
+}
+
+#photoNext span{
+	right: 26px;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.3s ease-out;
+	-moz-transition: opacity 0.3s ease-out;
+	-o-transition: opacity 0.3s ease-out;
+	transition: opacity 0.3s ease-out;
+	background: url(../img/webui/ico/box-next.png) no-repeat;
+}
+
+#photoPrev:hover span, #photoNext:hover span{
+	visibility:visible;
+	opacity:100;
+}
+
+.view-video #mainContent{
+	background: url(../img/webui/bg/macbg-xdarker.png) repeat;
+	border:none;
+}
+
+.view-video #mediaContainer{
+	position:relative;
+}
+.view-video #playerWrapper{
+	position:absolute;
+}
+
+
+/*-----------------messages---------------*/
+
+#messageCenter{
+	position:absolute;
+	right:0px;
+	top:40px;
+	z-index:100;
+	background:url(../img/webui/bg/macbg-xxdarker.png) repeat;
+	width:20%;
+	color:#fff;
+	overflow:hidden;
+}
+
+#messageCenter h5{
+	margin:6px 10px -5px 0;
+	padding:0;
+	
+}
+
+#messageCenter h5 .clear-message{
+	font-weight:normal;
+	font-size:12px;
+	position:absolute;
+	right:45px;
+}
+
+#messageCenter h5 .clear-message:hover{
+	text-decoration:none;
+}
+
+#messageCenter h5 .close-message{
+	position:absolute;
+	right:5px;
+	font-size:12px;
+	font-weight:normal;
+}
+
+#messages dt{
+	height:26px;
+	line-height:26px;
+	padding:0 5px;
+	margin:10px 0 5px 0;
+	background:url(../img/webui/bg/macbg-xdarker.png) repeat;
+	border-top:1px solid #666;
+	border-bottom:1px solid #333;
+}
+
+#messages dd img.icon-user{
+	height:32px;
+	width:32px;
+	float:left;
+}
+
+#messages dd .message-body{
+	margin-left:40px;
+}
+#messages dd .message-body p{
+	margin-top:3px;
+}
+
+#messages dd .message-body a{
+	color:#aaa;
+}
+
+
+#messages dd .message-head{
+	font-size:12px;
+	position:relative;
+}
+
+#messages dd .message-head .message-time{
+	position:absolute;
+	right:5px;
+	color:#ccc;
+	font-weight:normal;
+}
+
+
+#printModal{
+	width:600px;
+
+}
+
+#printModal .modal-header{
+	
+}
+#printModal li.span2 .thumbnail{
+	background:#fff;
+}
+
+#printModal li.span2 .thumbnail .image{
+	height:100px;
+	max-height:100px;
+}
+
+#printModal .thumbnails li.span2{
+	width:120px;
+}
+
+
+
+

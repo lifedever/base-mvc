@@ -1,0 +1,170 @@
+
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+
+.container-admin .sidebar{
+	
+}
+
+
+.container-admin .sidebar .content{
+	position: absolute;
+	*position: fixed;
+	width:160px;
+	left:0;
+	bottom:0;
+	top:41px;
+	z-index:20;
+	border-left:1px solid #f2f2f2;
+}
+
+
+
+.container-admin .sidebar .vmenu li a{
+	padding-left:5px;
+}
+
+.container-admin .sidebar .vmenu li.vmenu-header {
+	padding-left:2px;
+}
+
+.container-admin .main{
+	position: absolute;
+	*position: fixed;
+	top:41px;
+	left:161px;
+	right:0;
+	bottom:0;
+	overflow: hidden;
+
+}
+
+.container-admin .collapse-button{
+	position: absolute;
+	top:50%;
+	left:137px;
+	width:20px;
+	height:20px;
+	background:#000;
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	filter:alpha(opacity=50);
+	padding:5px 0 5px 5px;
+	*padding-bottom:0;
+	z-index:1000;
+	cursor: pointer;
+}
+
+.container-admin .main .toolbar{
+	position: relative;
+	display: block;
+}
+
+.container-admin .main .content{
+	overflow: auto;
+	padding: 10px;
+	position: absolute;
+	top:50px;
+	right:0;
+	left:0;
+	bottom:0;
+	overflow-x:hidden;
+}
+
+
+
+.container-vbar  .vbar{
+	width:60px;
+	top:41px;
+	left:0;
+	bottom:0;
+	position: absolute;
+	z-index:30;
+	overflow: auto;
+	border-right:1px solid #aaa;
+}
+
+
+
+
+.container-vbar .vbar .toolbar-stacked{
+	z-index:40;
+}
+
+ 	
+.container-vbar .sidebar{
+	width:240px;
+}
+
+.container-vbar .sidebar .content{
+	left:61px;
+}
+
+
+
+
+
+
+
+.container-vbar .main{
+	top:41px;
+	left:221px;
+
+
+}
+
+.container-vbar .collapse-button{
+	left:197px;
+
+}
+
+.container-vbar .main .content{
+
+}
+
+.full-screen .vbar,.full-screen .sidebar .content{
+	display:none;
+}
+
+
+.full-screen .container-admin .collapse-button{
+	left:0;
+}
+
+.full-screen .container-admin .main{
+	left:0;
+
+}
+
+.full-screen .container-admin .main .content{
+	padding-left:25px;
+}
+
+
+/*---------------------- 2.0 --------------------*/
+
+.table-wrapper{
+	overflow:auto;
+	position:relative;
+}
+
+.table-wrapper .table{
+	margin:0;
+}
+
+.table-fix{
+	table-layout:fixed;
+}
+
+body{
+	padding-top:40px;
+}
+
+
+
+
+
+

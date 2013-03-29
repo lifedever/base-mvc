@@ -1,0 +1,267 @@
+@CHARSET "UTF-8";
+	.main-content {
+		position: relative;
+	}
+	
+	#chatFooter {
+		position: absolute;
+		bottom: 0;
+		height: 60px;
+		width: 100%;
+		border-top: 1px solid #aaa;
+	}
+	
+	#users {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	#users li {
+		height: 60px;
+		padding: 1px;
+		border-bottom: 1px solid #ddd;
+		cursor: pointer;
+	}
+	
+	#users li.active {
+		background: #758197;
+	}
+	
+	#users .user-icon {
+		border: 1px solid #fff;
+		margin: 10px 0 0 10px;
+		float: left;
+		width: 40px;
+	}
+	
+	#users .user-body {
+		margin: 10px 0 0 60px;
+	}
+	
+	#users .user-body h5 {
+		margin: 0;
+		padding: 0;
+	}
+	
+	#users .user-body p {
+		margin: 0;
+		color: #aaa;
+	}
+	
+	#users li.active,#users li.active p {
+		color: #fff;
+	}
+	
+	.chatInput {
+		margin: 15px 10px 0 15px;
+		min-width: 500px;
+	}
+	
+	#sendBtn {
+		width: 100px;
+		margin-top: 5px;
+	}
+	
+	#search {
+		text-align: center;
+	}
+	
+	.search-query {
+		width: 85%;
+	}
+	
+	#chatBody {
+		overflow: scroll;
+	}
+	
+	.chatItem {
+		padding: 4px 0px 10px 0px;
+		_background: none;
+		_border: none;
+	}
+	
+	.me {
+		float: right;
+		width: 100%;
+	}
+	
+	.you {
+		float: left;
+		width: 100%;
+		_background: none;
+		_border: none;
+	}
+	
+	.chatItem .time {
+		font-size: 12px;
+		padding: 2px 0;
+		margin: 0px auto 10px;
+		width: 100px;
+		border-radius: 20px;
+		color: #7F7F7F;
+		text-shadow: 0 1px 0 white;
+	}
+	
+	.chatItem .cloud {
+		padding: 0px;
+		margin: 0px;
+	}
+	.chatItem .cloud {
+		max-width: 300px;
+		cursor: default;
+		position: static;
+	}
+	
+	.me .avatar {
+		float: right;
+		margin-right: 10px;
+	}
+	
+	.you .avatar {
+		float: left;
+		margin-left:10px;
+	}
+	
+	.chatItem .avatar {
+		width: 38px;
+		height: 38px;
+		border: 1px solid #CCC	9;
+		border: 1px solid white;
+		box-shadow: 0px 1px 0px #B3B6BA;
+	}
+	
+	.me .cloud {
+		float: right;
+		min-width: 50px;
+		max-width: 300px;
+		margin: 0 15px 0 0;
+		padding: 0px;
+		cursor: default;
+		position: static;
+	}
+	
+	.you .cloud {
+		float: left;
+		min-width: 50px;
+		max-width: 300px;
+		margin: 0 0 0 15px;
+	}
+		
+	
+	.cloudPannel {
+		position: relative;
+		_position: static;
+	}
+	
+	.me .cloudText .cloudBody {
+		-moz-border-top-colors: none;
+		-moz-border-right-colors: none;
+		-moz-border-bottom-colors: none;
+		-moz-border-left-colors: none;
+		border-color: transparent;
+		border: 1px solid #AFAFAF;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		box-shadow: 0px 1px 0px #D5D5D5;
+		border: 1px solid #9F9F9F	9;
+		background: #ECECEC	9;
+		border-radius: 6px	9;
+		margin-left: 8px;
+	}
+	
+	pre {
+		display: block;
+		padding:0;
+		margin: 0;
+		font-size: 12px;
+		line-height: 20px;
+		word-break: break-all;
+		word-wrap: break-word;
+		white-space: pre;
+		white-space: pre-wrap;
+		background:none;
+		border:none;
+	}
+	
+	.me .cloudText .cloudArrow {
+		position: absolute;
+		right: -10px;
+		top: 11px;
+		width: 13px;
+		height: 24px;
+		background: url(/resources/img/icon/bubble-right.png) no-repeat;
+	}
+	
+	.me .cloudText .cloudContent {
+		background-color: #E5E5E5;
+		vertical-align: top;
+		padding: 7px 10px;
+		background-color: #ECECEC	9;
+	}
+	.me .cloudContent {
+		border: 1px solid #EEE	9;
+		border-top: 1px solid white;
+		border-bottom: 1px solid #F2F2F2;
+		padding: 13px	9;
+		border-radius: 13px	9;
+		border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		overflow: hidden;
+		color: black;
+		text-shadow: none;
+		background-color: #ECECEC;
+		background: -webkit-gradient(linear, left top,left bottom, from(#F4F4F4),to(#E5E5E5), color-stop(0.1,#F3F3F3),color-stop(0.3,#F1F1F1),color-stop(0.5,#ECECEC),color-stop(0.7,#E9E9E9),color-stop(0.9,#E6E6E6),color-stop(1.0,#E5E5E5));
+		background-image: -moz-linear-gradient(top, #F3F3F3 10%, #F1F1F1 30%, #ECECEC 50%, #E9E9E9 70%, #E6E6E6 90%, #E5E5E5 100%);
+	}
+	.chatItem .cloudContent {
+		text-align: left;
+		font-weight: normal;
+		font-size: 14px;
+		min-height: 20px;
+		word-wrap: break-word;
+	}
+	
+	.you .cloudText .cloudBody {
+		-moz-border-top-colors: none;
+		-moz-border-right-colors: none;
+		-moz-border-bottom-colors: none;
+		-moz-border-left-colors: none;
+		border-color: transparent;
+		border: 1px solid #7AA23F;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		box-shadow: 0px 1px 0px #DBDBDB;
+		border: 1px solid #73972A	9;
+		border-radius: 6px	9;
+		background-color: #B2CF73;
+		background: -webkit-gradient(linear, left top,left bottom, from(#C4DE94),to(#A4C363), color-stop(0.1,#B4D174),color-stop(0.2,#B2CF73), color-stop(0.3,#B2CF73), color-stop(0.4,#B2CF73), color-stop(0.5,#B2CF73),color-stop(0.6,#AFCC74), color-stop(0.7,#ABCA6C),color-stop(0.8,#AECA72), color-stop(0.9,#A9C572),color-stop(1.0,#A4C363));
+		background-image: -moz-linear-gradient(top, #B4D174 10%, #B2CF7320%, #B2CF73 30%, #B2CF73 40%, #B2CF73 50%, #AFCC74 60%, #ABCA6C70%, #A9C572 80%, #AECA72 90%, #A4C363 100%);
+	}
+	
+	.you .cloudText .cloudContent {
+		padding: 5px 13px	9;
+		border-radius: 13px	9;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		padding: 7px 10px;
+		text-shadow: none;
+		color: #030303;
+		border-top: 1px solid #DCE6C8;
+		border-bottom: 1px solid #B9CF8B;
+		border-right: 1px solid #CCDEA3;
+		background-color: #C0DC85	9;
+	}
+	
+	.you .cloudText .cloudArrow {
+		position: absolute;
+		left: -6px;
+		top: 11px;
+		width: 13px;
+		height: 24px;
+		background: url(/resources/img/icon/bubble-left.png) no-repeat;
+	}
