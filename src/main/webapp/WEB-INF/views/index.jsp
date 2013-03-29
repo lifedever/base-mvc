@@ -5,7 +5,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>LifeRefactor</title>
 <jsp:include page="common/css.jsp"></jsp:include>
-<jsp:include page="common/js.jsp"></jsp:include>
 </head>
 <body>
 	<jsp:include page="common/header.jsp"></jsp:include>
@@ -20,6 +19,6 @@
 			</div>
 		</div>
 	</div>
-	<jsp:include page="common/footer.jsp"></jsp:include>
+	<jsp:include page="common/js.jsp"></jsp:include>
 </body>
 </html>
