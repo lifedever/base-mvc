@@ -1,4 +1,4 @@
-package com.wincn.permission;
+package com.wincn.permission.user;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

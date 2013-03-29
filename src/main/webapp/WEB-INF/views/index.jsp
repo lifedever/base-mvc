@@ -13,10 +13,9 @@
 		<div class="row-fluid">
 			<div class="span12">
 				<div class="hero-unit ">
-					<h1>欢迎访问管理界面</h1>
-					<p>本小站展示了简单的各类文件列表、查询、更新、分类管理等基本功能</p>
+					<h1>LifeRefactor</h1>
+					<p>本站旨在分享开源程序，讨论软件技术。</p>
 					<p>&nbsp;</p>
-
 				</div>
 			</div>
 		</div>
