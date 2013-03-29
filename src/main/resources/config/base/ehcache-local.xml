@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd">
+    <defaultCache eternal="true" maxElementsInMemory="500" overflowToDisk="false" />
+    <cache name="categories" maxElementsInMemory="100" eternal="false" overflowToDisk="false" />
+    <cache name="dicts" maxElementsInMemory="200" eternal="false" overflowToDisk="false" />
+    <cache name="messageCache" maxElementsInMemory="10" eternal="true" overflowToDisk="false" />
+    <cache name="deployChangedOption" maxElementsInMemory="1" eternal="false" overflowToDisk="false" />
+</ehcache>

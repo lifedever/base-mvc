@@ -30,5 +30,5 @@
 
 	<!-- Imports user-defined @Controller beans that process client requests -->
 	<beans:import resource="controllers.xml" />
-
+	<beans:import resource="db-config.xml" />
 </beans:beans>
