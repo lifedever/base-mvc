@@ -52,6 +52,7 @@ body {
 							</span>
 						</div>
 					</div>
+					
 					<div class="control-group">
 						<div class="controls">
 							<form:input type="password" class="input-block-level" path="password" placeholder="Password"></form:input>
