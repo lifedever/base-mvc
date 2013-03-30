@@ -6,7 +6,7 @@
 <title>用户登录</title>
 <jsp:include page="css.jsp"></jsp:include>
 <jsp:include page="js.jsp"></jsp:include>
-<link rel="shortcut icon" href="/resources/img/favicon.png">
+<link rel="shortcut icon" href="/resources/assets/ico/favicon.png">
 </head>
 <body>
 	<div class="navbar navbar-fixed-top">
