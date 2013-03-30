@@ -31,7 +31,7 @@
 				<h4 class="alert-heading">Oh snap! You got an error!</h4>
 				<p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
 				<p>
-					<a class="btn btn-danger" href="#">Take this action</a> <a class="btn" href="#">Or do this</a>
+					<a class="btn btn-danger" href="#">Take this action</a> <a id="doThis" class="btn" href="#">Or do this</a>
 				</p>
 			</div>
 		</div>
@@ -73,6 +73,12 @@
 			</div>
 		</div>
 	</div>
+	<div class="row">
+		<div class="span12">
+			<input type="text" id="datepicker" />
+			<div id="h-slider"></div>
+		</div>
+	</div>
 </div>
 
 <!-- Modal -->
@@ -92,8 +98,15 @@
 	</div>
 </div>
 <script>
+	$('#h-slider').slider({
+		range : true,
+		values : [ 0, 50 ]
+	});
 	$('#alert').on('click', function() {
 		$(".alert").alert('close')
+	});
+	$('#datepicker').datepicker({
+		inline : true
 	});
 </script>
 <jsp:include page="/footer"></jsp:include>
