@@ -9,7 +9,6 @@
 			<div class="nav-collapse collapse">
 				<ul class="nav">
 					<li class="active"><a href="/">首页</a></li>
-					<li class=""><a href="#">关于</a></li>
 					<li class="dropdown">
 						<a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown"> 
 							Java <b class="caret"></b>
@@ -21,6 +20,7 @@
 							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
 						</ul>
 					</li>
+					<li class=""><a href="#">关于</a></li>
 				</ul>
 				<form class="navbar-search pull-right" action="">
 					<div class="input-append">
