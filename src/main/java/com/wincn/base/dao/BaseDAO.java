@@ -21,6 +21,5 @@ import org.springframework.data.repository.Repository;
 public interface BaseDAO<T, ID extends Serializable> extends JpaRepository<T, ID> {
 	T findOne(ID id);
 	List<T> findAll(Sort sort);
-	
 	Page<T> findAll(Pageable pageable);
 }

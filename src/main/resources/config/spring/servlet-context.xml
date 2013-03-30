@@ -27,9 +27,9 @@
 		package -->
 	<beans:bean id="multipartResolver"
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
-
-	<beans:bean id="userValidator"
-		class="com.wincn.permission.user.validator.UserValidator" />
+	<!-- 验证 -->
+	<!-- <beans:bean id="userValidator"
+		class="com.wincn.permission.user.validator.UserValidator" /> -->
 	<beans:import resource="controllers.xml" />
 	<beans:import resource="db-config.xml" />
 </beans:beans>

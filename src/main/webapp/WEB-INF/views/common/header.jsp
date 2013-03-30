@@ -30,7 +30,7 @@
 							管理 <b class="caret"></b>
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="#">登录</a></li>
+							<li><a href="/signin">登录</a></li>
 							<li><a href="/signup">注册</a></li>
 						</ul>
 					</li>

@@ -13,21 +13,5 @@ import com.wincn.permission.user.validator.UserValidator;
 
 @Controller
 public class UserController {
-	@Autowired
-	private UserService userService;
-	@Autowired
-	private UserValidator userValidator;
-
-	@RequestMapping(value = "/signup", method = RequestMethod.GET)
-	public String regeditForm(User user, ModelMap model) {
-		model.addAttribute("user", user);
-		return "permission/user/signup";
-	}
-
-	@RequestMapping(value = "/signup", method = RequestMethod.POST)
-	public String regedit(User user, BindingResult bindingResult, ModelMap model) throws Exception {
-		if (!userService.regeditUser(user))
-			userValidator.validate(user, bindingResult);
-		return "permission/user/signup";
-	}
+	
 }
