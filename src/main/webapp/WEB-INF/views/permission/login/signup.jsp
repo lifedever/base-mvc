@@ -45,6 +45,18 @@ body {
 			<div class="span12">
 				<form:form cssClass="form-signin" action="" commandName="user" method="POST">
 					<fieldset>
+						<c:if test="${error ne null}">
+							<div class="alert alert-error">
+								${error }
+								<button type="button" class="close" data-dismiss="alert">&times;</button>
+							</div>
+						</c:if>
+						<c:if test="${message ne null}">
+							<div class="alert alert-success">
+								${message }
+								<button type="button" class="close" data-dismiss="alert">&times;</button>
+							</div>
+						</c:if>
 						<legend>
 							<strong>用户注册</strong>
 						</legend>

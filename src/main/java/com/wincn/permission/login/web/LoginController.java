@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.wincn.permission.login.service.LoginService;
 import com.wincn.permission.user.bean.User;
@@ -44,9 +45,12 @@ public class LoginController {
 	 * @throws Exception
 	 */
 	@RequestMapping(value = "/signup", method = RequestMethod.POST)
-	public String regedit(User user, ModelMap model) {
-		if (loginService.regeditUser(user))
+	public String regedit(User user, ModelMap model, RedirectAttributes redirectAttrs) {
+		if (loginService.regeditUser(user)) {
+			redirectAttrs.addFlashAttribute("message", "注册成功！");
 			return "redirect:/signin";
+		}
+		redirectAttrs.addFlashAttribute("error", "注册失败！");
 		return "redirect:/signup";
 	}
 
@@ -70,11 +74,11 @@ public class LoginController {
 	 * @return
 	 */
 	@RequestMapping(value = "/signin", method = RequestMethod.POST)
-	public String login(User user, ModelMap model) {
+	public String login(User user, ModelMap model, RedirectAttributes redirectAttrs) {
 		if (loginService.loginUser(user)) {
 			return "main/index";
 		}
+		redirectAttrs.addFlashAttribute("error", "登录失败！");
 		return "redirect:/signin";
 	}
-
 }

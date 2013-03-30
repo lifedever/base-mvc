@@ -9,6 +9,7 @@
 <body>
 	<jsp:include page="../common/header.jsp"></jsp:include>
 	<h1>这就是首页</h1>
+	${success }
 	<jsp:include page="../common/js.jsp"></jsp:include>
 </body>
 </html>
