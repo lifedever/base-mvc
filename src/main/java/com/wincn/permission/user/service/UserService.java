@@ -6,6 +6,13 @@ import org.springframework.stereotype.Service;
 import com.wincn.permission.user.bean.User;
 import com.wincn.permission.user.dao.UserDAO;
 
+/**
+ * 用户逻辑层
+ * 
+ * @author gefangshuai
+ * @email gefangshuai@163.com
+ * @createDate 2013-3-30 下午1:25:05
+ */
 @Service
 public class UserService {
 
@@ -16,16 +23,8 @@ public class UserService {
 		userDAO.save(user);
 	}
 
-	public boolean regeditUser(User user) {
-		if (this.findByUsername(user.getUsername()) == null) {
-			saveUser(user);
-			return true;
-		} else {
-			return false;
-		}
-	}
-
 	public User findByUsername(String username) {
 		return userDAO.findByUsername(username);
 	}
+
 }

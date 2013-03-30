@@ -1,4 +1,4 @@
-package com.wincn.permission.login;
+package com.wincn.permission.login.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -6,8 +6,8 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.wincn.permission.login.service.LoginService;
 import com.wincn.permission.user.bean.User;
-import com.wincn.permission.user.service.UserService;
 
 /**
  * 用于登录
@@ -19,7 +19,7 @@ import com.wincn.permission.user.service.UserService;
 @Controller
 public class LoginController {
 	@Autowired
-	private UserService userService;
+	private LoginService loginService;
 
 	/**
 	 * 跳转注册页面
@@ -45,7 +45,7 @@ public class LoginController {
 	 */
 	@RequestMapping(value = "/signup", method = RequestMethod.POST)
 	public String regedit(User user, ModelMap model) {
-		userService.regeditUser(user);
+		loginService.regeditUser(user);
 		return "permission/login/signup";
 	}
 
@@ -70,7 +70,7 @@ public class LoginController {
 	 */
 	@RequestMapping(value = "/signin", method = RequestMethod.POST)
 	public String login(User user, ModelMap model) {
-		// userService.regeditUser(user);
+		loginService.loginUser(user);
 		return "permission/login/signup";
 	}
 
