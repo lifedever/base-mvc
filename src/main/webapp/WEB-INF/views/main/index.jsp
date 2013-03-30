@@ -3,11 +3,22 @@
 <div class="container">
 	<div class="row">
 		<div class="span12">
+			<ul class="breadcrumb">
+				<li><a href="#">首页</a> <span class="divider">/</span></li>
+				<li><a href="#">Library</a> <span class="divider">/</span></li>
+				<li class="active">Data</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="span12">
 			<div class="hero-unit">
 				<h1>这是首页</h1>
 				<p>点击按钮弹出对话框</p>
 				<p>
-					<a href="#myModal" role="button" class="btn btn-primary btn-large" data-toggle="modal">查看更多</a> <a id="alert" role="button" class="btn btn-large btn-danger">弹出错误</a>
+					<a href="#myModal" role="button" class="btn btn-primary btn-large" data-toggle="modal">查看更多</a> <a id="alert" role="button" class="btn btn-large btn-danger">关闭错误</a>
 				</p>
 			</div>
 		</div>
@@ -22,6 +33,43 @@
 				<p>
 					<a class="btn btn-danger" href="#">Take this action</a> <a class="btn" href="#">Or do this</a>
 				</p>
+			</div>
+		</div>
+		<div class="span6">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>姓名</th>
+						<th>性别</th>
+						<th>邮箱</th>
+						<th>地址</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>张三</td>
+						<td>李四</td>
+						<td>王五</td>
+						<td>赵六</td>
+					</tr>
+					<tr>
+						<td>张三</td>
+						<td>李四</td>
+						<td>王五</td>
+						<td>赵六</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="pagination">
+				<ul>
+					<li><a href="#">上一页</a></li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">下一页</a></li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -44,10 +92,8 @@
 	</div>
 </div>
 <script>
-	(function() {
-		$('#alert').on('click', function() {
-			$(".alert").alert()
-		});
-	})();
+	$('#alert').on('click', function() {
+		$(".alert").alert('close')
+	});
 </script>
 <jsp:include page="/footer"></jsp:include>

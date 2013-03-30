@@ -5,6 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>用户登录</title>
 <jsp:include page="css.jsp"></jsp:include>
+<jsp:include page="js.jsp"></jsp:include>
 <link rel="shortcut icon" href="/resources/img/favicon.png">
 </head>
 <body>
