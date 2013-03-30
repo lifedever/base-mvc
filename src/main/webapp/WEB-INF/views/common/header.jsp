@@ -22,9 +22,13 @@
 						</ul>
 					</li>
 				</ul>
+				<form class="navbar-search pull-right" action="">
+					<div class="input-append">
+						<input type="text" class="span2" placeholder="输入关键字进行搜索">
+						 <a class="btn btn-primary" href="#"><i class="icon-search icon-white"></i></a>
+					</div>
+				</form>
 				<ul class="nav pull-right">
-					<li><a href="#">信息</a></li>
-					<li class="divider-vertical"></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 							管理 <b class="caret"></b>
@@ -35,9 +39,6 @@
 						</ul>
 					</li>
 				</ul>
-				<form class="navbar-search pull-right" action="">
-					<input type="text" class="search-query span2" placeholder="输入关键字并回车">
-				</form>
 			</div>
 		</div>
 	</div>

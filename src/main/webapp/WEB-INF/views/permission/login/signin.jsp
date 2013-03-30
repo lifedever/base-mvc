@@ -46,15 +46,14 @@ body {
 				<form:form cssClass="form-signin" action="" commandName="user" method="POST">
 					<fieldset>
 						<legend>
-							<strong>用户注册</strong>
+							<strong>用户登录</strong>
 						</legend>
 						<label>用户名</label>
 						<form:input type="text" class="input-block-level" path="username" />
 						<label>密码</label>
 						<form:input type="password" class="input-block-level" path="password" />
-						<label>确认密码</label> <input type="password" class="input-block-level" />
-						<button type="submit" class="btn btn-primary ">注册</button>
-						<button type="button" class="btn" onclick="window.location.href='/signin'">登录</button>
+						<button type="submit" class="btn btn-primary ">登录</button>
+						<button type="submit" class="btn " onclick="history.go(-1);">返回</button>
 					</fieldset>
 				</form:form>
 			</div>

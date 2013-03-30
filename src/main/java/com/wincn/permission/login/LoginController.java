@@ -23,15 +23,57 @@ public class LoginController {
 	@Autowired
 	private UserService userService;
 
+	/**
+	 * 跳转注册页面
+	 * 
+	 * @param user
+	 * @param model
+	 * @return
+	 */
 	@RequestMapping(value = "/signup", method = RequestMethod.GET)
 	public String regeditForm(User user, ModelMap model) {
 		model.addAttribute("user", user);
 		return "permission/login/signup";
 	}
 
+	/**
+	 * 用户注册验证
+	 * 
+	 * @param user
+	 * @param bindingResult
+	 * @param model
+	 * @return
+	 * @throws Exception
+	 */
 	@RequestMapping(value = "/signup", method = RequestMethod.POST)
-	public String regedit(User user, BindingResult bindingResult, ModelMap model) throws Exception {
+	public String regedit(User user, ModelMap model) {
 		userService.regeditUser(user);
 		return "permission/login/signup";
 	}
+
+	/**
+	 * 用户登录页面
+	 * 
+	 * @param user
+	 * @param model
+	 * @return
+	 */
+	@RequestMapping(value = "/signin", method = RequestMethod.GET)
+	public String loginForm(User user, ModelMap model) {
+		return "permission/login/signin";
+	}
+
+	/**
+	 * 用户登录验证
+	 * 
+	 * @param user
+	 * @param model
+	 * @return
+	 */
+	@RequestMapping(value = "/signin", method = RequestMethod.POST)
+	public String login(User user, ModelMap model) {
+		// userService.regeditUser(user);
+		return "permission/login/signup";
+	}
+
 }
