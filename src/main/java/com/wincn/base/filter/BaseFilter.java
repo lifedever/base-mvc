@@ -1,7 +1,6 @@
 package com.wincn.base.filter;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
@@ -18,13 +17,13 @@ public class BaseFilter extends OncePerRequestFilter {
 		// 获得项目路径并放入path
 		String path = request.getContextPath();
 		request.setAttribute("host", path);
-		
+
 		// 不过滤的uri
-		String[] notFilter = new String[] { "login.html", "index.html" };
+		String[] notFilter = new String[] { "/signup", "/signin" };
 		// 请求的uri
 		String uri = request.getRequestURI();
 		// uri中包含background时才进行过滤
-		if (uri.indexOf("background") != -1) {
+		if (uri.indexOf("/main") != -1) {
 			// 是否过滤
 			boolean doFilter = true;
 			for (String s : notFilter) {
@@ -39,20 +38,7 @@ public class BaseFilter extends OncePerRequestFilter {
 				// 从session中获取登录者实体
 				Object obj = request.getSession().getAttribute("user");
 				if (null == obj) {
-					// 如果session中不存在登录者实体，则弹出框提示重新登录
-					// 设置request和response的字符集，防止乱码
-					request.setCharacterEncoding("UTF-8");
-					response.setCharacterEncoding("UTF-8");
-					PrintWriter out = response.getWriter();
-					String loginPage = "....";
-					StringBuilder builder = new StringBuilder();
-					builder.append("<script type=\"text/javascript\">");
-					builder.append("alert('网页过期，请重新登录！');");
-					builder.append("window.top.location.href='");
-					builder.append(loginPage);
-					builder.append("';");
-					builder.append("</script>");
-					out.print(builder.toString());
+					response.sendRedirect("/signin");
 				} else {
 					// 如果session中存在登录者实体，则继续
 					filterChain.doFilter(request, response);

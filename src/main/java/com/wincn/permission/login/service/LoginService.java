@@ -4,12 +4,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.wincn.permission.user.bean.User;
-import com.wincn.permission.user.service.UserService;
+import com.wincn.permission.user.dao.UserDAO;
 
 @Service
 public class LoginService {
 	@Autowired
-	private UserService userService;
+	private UserDAO userDAO;
 
 	/**
 	 * 用户注册
@@ -20,8 +20,8 @@ public class LoginService {
 	public boolean regeditUser(User user) {
 		if (user.getUsername() == null || user.getPassword() == null || "".equals(user.getUsername().trim()) || "".equals(user.getPassword().trim())) {
 			return false;
-		} else if (userService.findByUsername(user.getUsername()) == null) {
-			userService.saveUser(user);
+		} else if (userDAO.findByUsername(user.getUsername()) == null) {
+			userDAO.save(user);
 			return true;
 		} else {
 			return false;
@@ -34,11 +34,11 @@ public class LoginService {
 	 * @param user
 	 * @return
 	 */
-	public boolean loginUser(User user) {
-		User user2 = userService.findByUsername(user.getUsername());
-		if (user2 != null && user2.getPassword().equals(user.getPassword())) {
-			return true;
+	public User loginUser(User user) {
+		User tempUser = userDAO.findByUsername(user.getUsername());
+		if (tempUser != null && tempUser.getPassword().equals(user.getPassword())) {
+			user = tempUser;
 		}
-		return false;
+		return user;
 	}
 }

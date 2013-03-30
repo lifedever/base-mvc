@@ -1,5 +1,7 @@
 package com.wincn.permission.login.web;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -47,7 +49,7 @@ public class LoginController {
 	@RequestMapping(value = "/signup", method = RequestMethod.POST)
 	public String regedit(User user, ModelMap model, RedirectAttributes redirectAttrs) {
 		if (loginService.regeditUser(user)) {
-			redirectAttrs.addFlashAttribute("message", "注册成功！");
+			redirectAttrs.addFlashAttribute("message", "注册成功，请登录！");
 			return "redirect:/signin";
 		}
 		redirectAttrs.addFlashAttribute("error", "注册失败！");
@@ -62,7 +64,8 @@ public class LoginController {
 	 * @return
 	 */
 	@RequestMapping(value = "/signin", method = RequestMethod.GET)
-	public String loginForm(User user, ModelMap model) {
+	public String loginForm(User user, ModelMap model, HttpSession session) {
+		session.removeAttribute("user");
 		return "permission/login/signin";
 	}
 
@@ -74,8 +77,9 @@ public class LoginController {
 	 * @return
 	 */
 	@RequestMapping(value = "/signin", method = RequestMethod.POST)
-	public String login(User user, ModelMap model, RedirectAttributes redirectAttrs) {
-		if (loginService.loginUser(user)) {
+	public String login(User user, ModelMap model, RedirectAttributes redirectAttrs, HttpSession session) {
+		if ((user = loginService.loginUser(user)).getId() != null) {
+			session.setAttribute("user", user);
 			return "redirect:/main";
 		}
 		redirectAttrs.addFlashAttribute("error", "登录失败！");
