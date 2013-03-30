@@ -20,3 +20,6 @@
 		</ul>
 	</div>
 </footer>
+<jsp:include page="js.jsp"></jsp:include>
+</body>
+</html>

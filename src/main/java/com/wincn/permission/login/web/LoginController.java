@@ -76,7 +76,7 @@ public class LoginController {
 	@RequestMapping(value = "/signin", method = RequestMethod.POST)
 	public String login(User user, ModelMap model, RedirectAttributes redirectAttrs) {
 		if (loginService.loginUser(user)) {
-			return "main/index";
+			return "redirect:/main";
 		}
 		redirectAttrs.addFlashAttribute("error", "登录失败！");
 		return "redirect:/signin";
