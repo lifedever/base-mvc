@@ -45,8 +45,9 @@ public class LoginController {
 	 */
 	@RequestMapping(value = "/signup", method = RequestMethod.POST)
 	public String regedit(User user, ModelMap model) {
-		loginService.regeditUser(user);
-		return "permission/login/signup";
+		if (loginService.regeditUser(user))
+			return "redirect:/signin";
+		return "redirect:/signup";
 	}
 
 	/**
@@ -70,8 +71,10 @@ public class LoginController {
 	 */
 	@RequestMapping(value = "/signin", method = RequestMethod.POST)
 	public String login(User user, ModelMap model) {
-		loginService.loginUser(user);
-		return "permission/login/signup";
+		if (loginService.loginUser(user)) {
+			return "main/index";
+		}
+		return "redirect:/signin";
 	}
 
 }
