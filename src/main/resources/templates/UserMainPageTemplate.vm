@@ -1,0 +1,4 @@
+<html>
+	<head>${user.username}的首页</head>
+	<body>${user.username}的首页</body>
+</html>
