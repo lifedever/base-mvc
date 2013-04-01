@@ -25,38 +25,6 @@ public class LoginController {
 	private LoginService loginService;
 
 	/**
-	 * 跳转注册页面
-	 * 
-	 * @param user
-	 * @param model
-	 * @return
-	 */
-	@RequestMapping(value = "/signup", method = RequestMethod.GET)
-	public String regeditForm(User user, ModelMap model) {
-		model.addAttribute("user", user);
-		return "permission/login/signup";
-	}
-
-	/**
-	 * 用户注册验证
-	 * 
-	 * @param user
-	 * @param bindingResult
-	 * @param model
-	 * @return
-	 * @throws Exception
-	 */
-	@RequestMapping(value = "/signup", method = RequestMethod.POST)
-	public String regedit(User user, ModelMap model, RedirectAttributes redirectAttrs) {
-		if (loginService.regeditUser(user)) {
-			redirectAttrs.addFlashAttribute("message", "注册成功，请登录！");
-			return "redirect:/signin";
-		}
-		redirectAttrs.addFlashAttribute("error", "注册失败！");
-		return "redirect:/signup";
-	}
-
-	/**
 	 * 用户登录页面
 	 * 
 	 * @param user

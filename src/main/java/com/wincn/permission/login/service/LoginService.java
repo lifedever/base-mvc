@@ -12,23 +12,6 @@ public class LoginService {
 	private UserDAO userDAO;
 
 	/**
-	 * 用户注册
-	 * 
-	 * @param user
-	 * @return
-	 */
-	public boolean regeditUser(User user) {
-		if (user.getUsername() == null || user.getPassword() == null || "".equals(user.getUsername().trim()) || "".equals(user.getPassword().trim())) {
-			return false;
-		} else if (userDAO.findByUsername(user.getUsername()) == null) {
-			userDAO.save(user);
-			return true;
-		} else {
-			return false;
-		}
-	}
-
-	/**
 	 * 用户登录
 	 * 
 	 * @param user
