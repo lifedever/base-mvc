@@ -85,4 +85,16 @@ public class LoginController {
 		redirectAttrs.addFlashAttribute("error", "登录失败！");
 		return "redirect:/signin";
 	}
+
+	/**
+	 * 登出操作
+	 * 
+	 * @param session
+	 * @return
+	 */
+	@RequestMapping(value = "/signout", method = RequestMethod.GET)
+	public String logout(HttpSession session) {
+		session.removeAttribute("user");
+		return "redirect:/signin";
+	}
 }

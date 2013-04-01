@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ include file="tags.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,10 +23,10 @@
 						<li class="dropdown"><a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown"> Java <b class="caret"></b>
 						</a>
 							<ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Java基础</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Java高级</a></li>
 								<li role="presentation" class="divider"></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">开源推荐</a></li>
 							</ul></li>
 						<li class=""><a href="#">关于</a></li>
 					</ul>
@@ -35,12 +36,25 @@
 						</div>
 					</form>
 					<ul class="nav pull-right">
+						<c:if test="${!empty(sessionScope.user) }">
+							<li><a href="">欢迎你：${sessionScope.user.username }</a></li>
+						</c:if>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"> 管理 <b class="caret"></b>
 							</a>
 							<ul class="dropdown-menu">
-								<li><a href="/signin">登录</a></li>
-								<li><a href="/signup">注册</a></li>
+								<c:choose>
+									<c:when test="${empty(sessionScope.user) }">
+										<li><a href="/signin">登录</a></li>
+										<li><a href="/signup">注册</a></li>
+									</c:when>
+									<c:otherwise>
+										<li><a href="/signin">发表文章</a></li>
+										<li role="presentation" class="divider"></li>
+										<li><a href="/signout">登出</a></li>
+									</c:otherwise>
+								</c:choose>
+									
 							</ul>
 						</li>
 					</ul>
