@@ -39,7 +39,7 @@ public class RegisterController {
 	 */
 	@RequestMapping(value = "/signup", method = RequestMethod.POST)
 	public String regedit(User user, ModelMap model, RedirectAttributes redirectAttrs) {
-		if (registerService.regeditUser(user)) {
+		if (registerService.regediterUser(user)) {
 			redirectAttrs.addFlashAttribute("message", "注册成功，请登录！");
 			return "redirect:/signin";
 		}
