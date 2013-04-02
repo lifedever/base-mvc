@@ -32,10 +32,9 @@ public class RegisterService {
 		if (user.getUsername() == null || user.getPassword() == null || "".equals(user.getUsername().trim()) || "".equals(user.getPassword().trim())) {
 			return false;
 		} else if (userDAO.findByUsername(user.getUsername()) == null) {
-			// FIXME 暂时注释
-			// userDAO.save(user);
 			try {
 				regediterSuccessHandle(user);
+				userDAO.save(user);
 			} catch (CreateUserMainDirFailException e) {
 				e.printStackTrace();
 				return false;
@@ -65,10 +64,12 @@ public class RegisterService {
 	 * @throws CreateUserMainDirFailException
 	 */
 	private void createUserDirectory(String path) throws CreateUserMainDirFailException {
-		if (new File(path).mkdir()) {
+		File userDir = new File(path);
+		if (!userDir.exists()) {
+			if (!new File(path).mkdirs())
+				throw new CreateUserMainDirFailException("用户主目录创建失败，请查看是否具有创建文件夹的权限！");
 			// TODO 创建基本的模板页面
-		} else {
-			throw new CreateUserMainDirFailException("用户主目录创建失败，请查看是否具有创建文件夹的权限！");
+			
 		}
 	}
 }
