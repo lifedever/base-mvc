@@ -32,4 +32,5 @@
 		class="com.wincn.permission.user.validator.UserValidator" /> -->
 	<beans:import resource="controllers.xml" />
 	<beans:import resource="db-config.xml" />
+	<beans:import resource="test-config.xml" />
 </beans:beans>
