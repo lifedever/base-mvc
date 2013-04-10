@@ -8,7 +8,7 @@ package com.wincn.user.constant;
  * @createDate 2013-4-1 下午1:06:48
  */
 public enum FilePathEnum {
-	USER_MAIN_DIR("userMainDir", "/user");// 注册用户主目录，存储当前用户的所有文件
+	USER_MAIN_DIR("userMainDir", "blog/users/");// 注册用户主目录，存储当前用户的所有文件
 
 	private String name;
 	private String path;

@@ -50,7 +50,7 @@
 											<li><a href="/signup">注册</a></li>
 										</c:when>
 										<c:otherwise>
-											<li><a href="/signin">发表文章</a></li>
+											<li><a href="/blog/${sessionScope.user.username }/newpost">发表文章</a></li>
 											<li role="presentation" class="divider"></li>
 											<li><a href="/signout">登出</a></li>
 										</c:otherwise>

@@ -9,6 +9,7 @@ import com.wincn.base.constant.Global;
 import com.wincn.permission.user.bean.User;
 import com.wincn.permission.user.dao.UserDAO;
 import com.wincn.permission.user.exception.CreateUserMainDirFailException;
+import com.wincn.user.constant.FilePathEnum;
 
 /**
  * 注册逻辑
@@ -54,8 +55,10 @@ public class RegisterService {
 	 * @throws CreateUserMainDirFailException
 	 */
 	private void regediterSuccessHandle(User user) throws CreateUserMainDirFailException {
-		String userPath = Global.WEB_APP_ROOT + "/WEB-INF/views/users/" + user.getUsername();
+		String userPath = Global.WEB_APP_ROOT + "/WEB-INF/views/" + FilePathEnum.USER_MAIN_DIR.getPath() + user.getUsername();
 		createUserDirectory(userPath);
+
+		// TODO 创建模板文件
 	}
 
 	/**
@@ -69,7 +72,7 @@ public class RegisterService {
 			if (!new File(path).mkdirs())
 				throw new CreateUserMainDirFailException("用户主目录创建失败，请查看是否具有创建文件夹的权限！");
 			// TODO 创建基本的模板页面
-			
+
 		}
 	}
 }
