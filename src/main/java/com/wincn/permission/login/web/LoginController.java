@@ -2,6 +2,7 @@ package com.wincn.permission.login.web;
 
 import javax.servlet.http.HttpSession;
 
+import org.apache.shiro.session.mgt.SessionManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -23,6 +24,8 @@ import com.wincn.permission.user.bean.User;
 public class LoginController {
 	@Autowired
 	private LoginService loginService;
+	@Autowired
+	SessionManager sessionManager;
 
 	/**
 	 * 用户登录页面
@@ -48,7 +51,7 @@ public class LoginController {
 	public String login(User user, ModelMap model, RedirectAttributes redirectAttrs, HttpSession session) {
 		if ((user = loginService.loginUser(user)).getId() != null) {
 			session.setAttribute("user", user);
-			return "redirect:/main";
+			return "redirect:/blog/" + user.getUsername();
 		}
 		redirectAttrs.addFlashAttribute("error", "登录失败！");
 		return "redirect:/signin";

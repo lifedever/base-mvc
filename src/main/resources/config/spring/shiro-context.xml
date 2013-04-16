@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd"
+	default-lazy-init="true">
+
+	<!-- Shiro Filter -->
+	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+		<property name="securityManager" ref="securityManager" />
+		<property name="loginUrl" value="/signin" />
+		<!-- <property name="unauthorizedUrl" value="/unauth"/> 这里不起作用，直接跳转到403页面了 -->
+		<property name="successUrl" value="/" />
+		<property name="filterChainDefinitions">
+			<value>
+				/resources/** = anon
+				# some example chain definitions:
+				/admin/** = authc, roles[admin]
+				/docs/** = authc, perms[document:read]
+				/** = authc
+				/signout=logout
+				# more URL-to-FilterChain definitions here
+
+			</value>
+		</property>
+	</bean>
+
+	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+	</bean>
+	<bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor" />
+</beans>
