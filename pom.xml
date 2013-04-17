@@ -21,6 +21,7 @@
 		<velocity.version>1.7</velocity.version>
 		<freemarker.version>2.3.19</freemarker.version>
 		<shiro.version>1.2.0</shiro.version>
+		<cxf.version>2.2.3</cxf.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jdk.version>1.6</jdk.version>
 	</properties>
@@ -302,6 +303,13 @@
 			<artifactId>junit</artifactId>
 			<version>4.8.2</version>
 			<scope>test</scope>
+		</dependency>
+		
+		<!-- cxf -->
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-api</artifactId>
+			<version>2.7.3</version>
 		</dependency>
 	</dependencies>
 	<build>
