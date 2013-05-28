@@ -13,11 +13,9 @@
 		<property name="filterChainDefinitions">
 			<value>
 				/resources/** = anon
+				/signout=logout
 				# some example chain definitions:
 				/admin/** = authc, roles[admin]
-				/docs/** = authc, perms[document:read]
-				/** = authc
-				/signout=logout
 				# more URL-to-FilterChain definitions here
 
 			</value>
