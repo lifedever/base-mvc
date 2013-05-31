@@ -33,4 +33,5 @@
 	<beans:import resource="controllers.xml" />
 	<beans:import resource="db-config.xml" />
 	<beans:import resource="test-config.xml" />
+	<beans:import resource="activemq-config.xml" />
 </beans:beans>
